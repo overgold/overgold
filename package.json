@@ -1,0 +1,33 @@
+{
+  "name": "parcel",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/overgold/parcel",
+  "scripts": {
+    "start:dev-ovg": "env-cmd -f .env.dev-ovg parcel --port=5000 src/*.html --open",
+    "build:dev-ovg": "env-cmd -f .env.dev-ovg parcel build src/index.html --dist-dir=build --public-url /parcel/",
+    "start:prod-ovg": "env-cmd -f .env.prod-ovg parcel src/*.html --open",
+    "build:prod-ovg": "env-cmd -f .env.prod-ovg parcel build src/index.html --dist-dir=build --public-url /parcel/",
+    "translate-upload-prod": "TC_ACTION=upload node translate.js",
+    "translate-download-prod": "TC_ACTION=download node translate.js"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "env-cmd": "^10.1.0",
+    "fs": "^0.0.1-security",
+    "i18next": "^23.4.5",
+    "i18next-browser-languagedetector": "^7.1.0",
+    "loc-i18next": "^0.1.5",
+    "modern-normalize": "^1.1.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}

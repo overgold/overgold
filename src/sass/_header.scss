@@ -1,0 +1,18 @@
+.header {
+  width: 100vw;
+  height: 76px;
+  margin: 0 auto;
+}
+
+.nav {
+  width: 1140px;
+  height: 76px;
+  margin: 0 auto;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
